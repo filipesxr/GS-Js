@@ -46,13 +46,16 @@ buttonsubmit.addEventListener("click", ()=>{
         alert("Preencha todos os campos!");
     }
     if(inputname.value.length < 4){
-        alert("O nome deve ter pelo menos 4 carácteres!")
+        alert("O nome deve ter pelo menos 4 carácteres!");
     }
     if(inputemail.value.length < 4){
-        alert("O email deve ter pelo menos 4 carácteres!")
+        alert("O email deve ter pelo menos 4 carácteres!");
     }
     if(inputnumber.value.length < 11){
-        alert("O número de telefone deve ter pelo menos 11 carácteres!")
+        alert("O número de telefone deve ter pelo menos 11 carácteres!");
+    }
+    else{
+        alert("Obrigado!");
     }
 })
 
