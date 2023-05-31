@@ -33,3 +33,30 @@ form [name="user"], form [name="password"], form [name="name"], form [name="emai
     height: 30px;
     cursor: pointer;
 }
+
+.carrossel{
+    margin: 5px;
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.imagens{
+    display: flex;
+    height: 500px;
+    width: 400%;
+}
+
+.imagens input{
+    display: none;
+}
+
+.imagem{
+    width: 25%;
+    position: relative;
+}
+
+.imagem img{
+    height: 500px;
+    width: 800px;
+}
