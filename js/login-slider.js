@@ -19,6 +19,9 @@ const submitelement = document.querySelector(".submit");
 submitelement.style.backgroundColor = "#2F4F4F";
 submitelement.style.color = "#FFFFFF";
 
+const titleelement = document.querySelector(".title");
+titleelement.style.backgroundColor = "#FFFFFF"
+
 
 // Validação do LogIn
 const inputuser = document.querySelector("input[name='user']");
@@ -60,3 +63,17 @@ buttonsubmit.addEventListener("click", ()=>{
 })
 
 // Imagens e Carrossel
+let count = 1;
+
+function nextImagem(){
+    count++;
+    if(count > 3){
+        count = 1;
+    }
+
+    document.querySelector("#radio"+count).checked = true;
+}
+
+setInterval( function(){
+    nextImagem();
+},2000)
