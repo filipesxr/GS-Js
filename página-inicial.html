@@ -10,13 +10,15 @@
 </head>
 
 <body>
-    <form class="form">
+    <form onsubmit="return false;" class="form">
         <h3>Preencha o Formulário:</h3>
+        <button class="darkmode" onclick="darkMode()">Ativar Dark Mode</button>
+        <button class="lightmode" onclick="lightMode()">Ativar Light Mode</button>
         <input type="text" name="name" placeholder="Nome">
         <input type="text" name="email" placeholder="Email">
         <input type="number" name="number" placeholder="Número de Celular com DDD">
         <button type="submit" class="submit">Enviar</button>
-        <button type="reset" class="clean">Limpar</button>
+        <button type="reset" class="clean" id="clean-btn1">Limpar</button>
     </form>
 
     <form onsubmit="return false;" class="login">
@@ -24,7 +26,7 @@
     <input type="text" name="user" placeholder="Usuário">
     <input type="password" name="password" placeholder="Senha">
     <button type="submit" class="enter">Entrar</button>
-    <button type="reset" class="clean">Limpar</button>
+    <button type="reset" class="clean" id="clean-btn2">Limpar</button>
     </form>
 
     <div class="title">
@@ -63,6 +65,8 @@
             <label for="radio3" class="manual-btn"></label>
         </div>
     </div>
+
+    <button class="changepage"><a href="./principal.html"> CLIQUE AQUI PARA IR PARA NOSSO SITE!</a></button>
 
 </body>
 </html>
