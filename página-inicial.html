@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Inicial</title>
-    <script src="./js/login.js" defer></script>
-    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login-slider.js" defer></script>
+    <link rel="stylesheet" href="./css/login-slider.css">
 </head>
 
 <body>
@@ -27,33 +27,41 @@
     <button type="reset" class="clean">Limpar</button>
     </form>
 
-    <div class="carrossel">
-        <div class="imagens">
+    <div class="title">
+        <h1>Principais Parcerias:</h1>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
             <!--Radio Buttons-->
             <input type="radio" name="radio-btn" id="radio1">
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
-            
-            <!--Images-->
-            <div class="primeira imagem">
-                <img src="./img/aviso-carrossel.jpg" alt="Imagem aviso">
+
+            <!--Slide Images-->
+            <div class="slide first">
+                <img src="./img/fiap-slider.jpg" alt="Fiap">
             </div>
-            <div class="imagem">
-                <img src="./img/validade-carrossel.jpg" alt="Imagem validade">
+            <div class="slide">
+                <img src="./img/heinz-slider.jpg" alt="Heinz">
             </div>
-            <div class="imagem">
-                <img src="./img/banana-carrossel.jpg" alt="Imagem banana">
+            <div class="slide">
+                <img src="./img/microsoft-slider.jpg" alt="Microsoft">
             </div>
 
-            <!--Auto Navegation-->
-            <div class="auto-navegate">
+            <!--Auto Navigation-->
+            <div class="navigation-auto">
                 <div class="auto-btn1"></div>
                 <div class="auto-btn2"></div>
                 <div class="auto-btn3"></div>
             </div>
-
         </div>
 
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
     </div>
 
 </body>
