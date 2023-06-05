@@ -1,5 +1,7 @@
+/* Import da Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
 
+/* CSS da página*/
 *{
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -65,4 +67,28 @@ h1{
 
 .linha{
     grid-template-rows: 250px 275px 50px 100px ;
+}
+
+/* CSS do relógio*/
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px black solid;
+}
+
+.relogio div{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
 }

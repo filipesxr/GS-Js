@@ -1,5 +1,7 @@
+/* Import da Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
 
+/* Definindo e deixando mais bonita a box dos formulários*/
 *{
     margin: 5px;
     padding: 5px;
@@ -22,6 +24,7 @@ form [name="user"], form [name="password"], form [name="name"], form [name="emai
     margin: 10px 0;
 }
 
+/* Definindo botões mais bonitos*/
 .submit, .enter, .clean{
     width: 100%;
     height: 30px;
@@ -44,6 +47,7 @@ form [name="user"], form [name="password"], form [name="name"], form [name="emai
     cursor: pointer;
 }
 
+/* Defininfo e deixando bonito o título "Parcerias"*/
 .title{
     margin-top: 20px;
     padding: 10px;
@@ -52,6 +56,7 @@ form [name="user"], form [name="password"], form [name="name"], form [name="emai
     justify-content: center;
 }
 
+/* Definindo e deixando bonito o Slider*/
 .slider{
     margin: 0 auto;
     width: 800px;
@@ -79,6 +84,7 @@ form [name="user"], form [name="password"], form [name="name"], form [name="emai
     height: 400px;
 }
 
+/* Definindo a navegação manual e seus botões*/
 .manual-navigation{
     position: absolute;
     width: 400px;
@@ -115,6 +121,7 @@ form [name="user"], form [name="password"], form [name="name"], form [name="emai
     margin-left: -52%;
 }
 
+/* Definindo a navegação automática e seus botões*/
 .navigation-auto{
     position: absolute;
     width: 800px;
@@ -145,4 +152,28 @@ form [name="user"], form [name="password"], form [name="name"], form [name="emai
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: #2F4F4F;
+}
+
+/* Definindo relógio na página inicial*/
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px black solid;
+}
+
+.relogio div{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    color: black;
+}
+
+.relogio span.tempo{
+    font-size: 10px;
 }
