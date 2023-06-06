@@ -57,3 +57,54 @@ const relogio = setInterval(function time(){
     mes.textContent = m;
     ano.textContent = a;
 });
+
+// Resgatando os botões, o body, o título e definindo suas cores
+const bodyelement = document.querySelector("body");
+
+const titleelement = document.querySelector("h1");
+
+const buttondarkMode = document.querySelector("#darkMode"); // Botão de Dark Mode
+buttondarkMode.style.backgroundColor = "#000000";
+buttondarkMode.style.color = "#FFFFFF";
+
+const buttonlightMode = document.querySelector("#lightMode"); // Botão de Light Mode
+buttonlightMode.style.backgroundColor = "#FFFFFF";
+
+// Função Dark Mode e Light Mode
+function darkMode(){
+    bodyelement.style.backgroundColor = "#4F4F4F";
+    titleelement.style.color = "#FFFFFF";
+    relogioelement.style.backgroundColor = "#4F4F4F";
+    relogioelement.style.color = "#FFFFFF";
+    boxdia.style.backgroundColor = "#4F4F4F";
+    boxdia.style.color = "#FFFFFF";
+    boxmes.style.backgroundColor = "#4F4F4F";
+    boxmes.style.color = "#FFFFFF";
+    boxano.style.backgroundColor = "#4F4F4F";
+    boxano.style.color = "#FFFFFF";
+    boxhora.style.backgroundColor = "#4F4F4F";
+    boxhora.style.color = "#FFFFFF";
+    boxminuto.style.backgroundColor = "#4F4F4F";
+    boxminuto.style.color = "#FFFFFF";
+    boxsegundo.style.backgroundColor = "#4F4F4F";
+    boxsegundo.style.color = "#FFFFFF";
+}
+
+function lightMode(){
+    bodyelement.style.backgroundColor = "#FFFFFF";
+    titleelement.style.color = "#000000";
+    relogioelement.style.backgroundColor = "#FFFFFF";
+    relogioelement.style.color = "#000000";
+    boxdia.style.backgroundColor = "#FFFFFF";
+    boxdia.style.color = "#000000";
+    boxmes.style.backgroundColor = "#FFFFFF";
+    boxmes.style.color = "#000000";
+    boxano.style.backgroundColor = "#FFFFFF";
+    boxano.style.color = "#000000";
+    boxhora.style.backgroundColor = "#FFFFFF";
+    boxhora.style.color = "#000000";
+    boxminuto.style.backgroundColor = "#FFFFFF";
+    boxminuto.style.color = "#000000";
+    boxsegundo.style.backgroundColor = "#FFFFFF";
+    boxsegundo.style.color = "#000000";
+}

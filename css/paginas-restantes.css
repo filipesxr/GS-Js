@@ -92,3 +92,14 @@ h1{
 .relogio span.tempo{
     font-size: 10px;
 }
+
+/* CSS dos botões Dark Mode e Light Mode*/
+#darkMode, #lightMode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border: 2px white solid;
+    cursor: pointer;
+}
